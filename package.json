@@ -1,6 +1,6 @@
 {
     "name": "easy-ast-transform",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Transforming and modifying a JS AST tree simplified.",
     "homepage": "https://github.com/binary-person/easy-ast-transform#readme",
     "repository": {
