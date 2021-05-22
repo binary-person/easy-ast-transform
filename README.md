@@ -91,7 +91,7 @@ recast.print(inputAst).code === `
 })();`;
 ```
 
-See [test cases](src/testCases.test.ts) for more examples.
+See [test cases](/src/testCases.test.ts) for more examples.
 
 ## Sidenote
 
