@@ -10,7 +10,7 @@
         "build": "rm -rf lib/* && tsc",
         "build-prod": "npm test && rm -rf lib/* && tsc --project tsconfig.prod.json",
         "test": "prettier --check 'src/**/*.ts' && npm run build && npm run jesttest && npm run lint && echo 'All tests pass!'",
-        "prepack": "npm test && npm run build-prod"
+        "prepack": "npm run build-prod"
     },
     "keywords": [],
     "author": "Simon Cheng <simoncheng559@gmail.com> (https://github.com/binary-person)",
