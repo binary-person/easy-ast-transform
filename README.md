@@ -91,7 +91,7 @@ recast.print(inputAst).code === `
 })();`;
 ```
 
-See [test cases](/src/testCases.test.ts) for more examples.
+See [test cases](https://github.com/binary-person/easy-ast-transform/blob/master/src/testCases.test.ts) for more examples.
 
 ## Sidenote
 
