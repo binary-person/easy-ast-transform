@@ -2,6 +2,11 @@
     "name": "easy-ast-transform",
     "version": "1.0.2",
     "description": "Transforming and modifying a JS AST tree simplified.",
+    "homepage": "https://github.com/binary-person/easy-ast-transform#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/binary-person/easy-ast-transform"
+    },
     "main": "lib/index.js",
     "scripts": {
         "format": "prettier --write 'src/**/*.ts'",
