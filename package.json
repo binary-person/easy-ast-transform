@@ -1,0 +1,43 @@
+{
+    "name": "easy-ast-transform",
+    "version": "1.0.0",
+    "description": "Transforming and modifying a JS AST tree simplified.",
+    "main": "lib/index.js",
+    "scripts": {
+        "format": "prettier --write 'src/**/*.ts'",
+        "lint": "eslint -c .eslintrc.json --ext .ts src",
+        "jesttest": "jest --config jestconfig.json --runInBand",
+        "build": "rm -rf lib/* && tsc",
+        "build-prod": "npm test && rm -rf lib/* && tsc --project tsconfig.prod.json",
+        "test": "prettier --check 'src/**/*.ts' && npm run build && npm run jesttest && npm run lint && echo 'All tests pass!'",
+        "prepack": "npm test && npm run build-prod"
+    },
+    "keywords": [],
+    "author": "Simon Cheng <simoncheng559@gmail.com> (https://github.com/binary-person)",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "clone-deep": "^4.0.1"
+    },
+    "devDependencies": {
+        "@types/clone-deep": "^4.0.1",
+        "@types/jest": "^26.0.23",
+        "@types/uglify-js": "^3.13.0",
+        "@typescript-eslint/eslint-plugin": "^4.23.0",
+        "@typescript-eslint/parser": "^4.23.0",
+        "acorn": "^8.2.4",
+        "astring": "^1.7.4",
+        "eslint": "^7.26.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prefer-arrow": "^1.2.3",
+        "jest": "^26.6.3",
+        "prettier": "^2.3.0",
+        "recast": "^0.20.4",
+        "ts-jest": "^26.5.6",
+        "ts-loader": "^9.1.2",
+        "typescript": "^4.2.4",
+        "uglify-js": "^3.13.7"
+    },
+    "files": [
+        "lib"
+    ]
+}
